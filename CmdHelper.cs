@@ -1,3 +1,5 @@
+public class CmdHelper
+{
  internal static async Task<CommandLineOutput> RunCommand(string command, string parameters, string workingDirectory, string logfile = null)
         {
             var info = new ProcessStartInfo(command, parameters)
@@ -102,3 +104,4 @@
                 throw;
             }
         }
+}
