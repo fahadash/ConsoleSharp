@@ -20,7 +20,7 @@ Here are a few examples
   Console.WriteLine(output.Errors);
 ```
   
-2. To log to file, similar to C:\> Command.exe >> c:\path\to\logfile.log
+2. To log to file, similar to ```C:\> Command.exe >> c:\path\to\logfile.log```
 
 ```csharp
   var outputTask = await CmdHelper.RunCommand("c:\\Python27\\Python.exe","-file c:\\path\\to\\myprogram.py", "c:\\path\\to\\workingdir", "c:\\path\\to\\logfile.log");
