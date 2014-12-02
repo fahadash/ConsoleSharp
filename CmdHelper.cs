@@ -1,3 +1,6 @@
+using System;
+using System.Diagnostics;
+
 public class CmdHelper
 {
  internal static async Task<CommandLineOutput> RunCommand(string command, string parameters, string workingDirectory, string logfile = null)
