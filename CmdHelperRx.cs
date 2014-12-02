@@ -1,7 +1,7 @@
 using System;
 using System.Diagnostics;
 
-public class CmdHelper
+public class CmdHelperRx
 {
  internal static async Task<CommandLineOutput> RunCommand(string command, string parameters, string workingDirectory, string logfile = null)
         {
