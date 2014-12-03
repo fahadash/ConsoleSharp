@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks; 
 
-namespace CommandSharp
+namespace ConsoleSharp
 {
     [DebuggerDisplay("{DisplayMessage}; {Message}")]
     public class CmdException : Exception

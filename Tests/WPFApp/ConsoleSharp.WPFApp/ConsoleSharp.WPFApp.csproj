@@ -7,8 +7,8 @@
     <ProjectGuid>{618B2476-3EF2-4BAE-BDC4-8C92C137561C}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>CommandSharp.WPFApp</RootNamespace>
-    <AssemblyName>CommandSharp.WPFApp</AssemblyName>
+    <RootNamespace>ConsoleSharp.WPFApp</RootNamespace>
+    <AssemblyName>ConsoleSharp.WPFApp</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -119,9 +119,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\CommandSharp\CommandSharp.csproj">
+    <ProjectReference Include="..\..\..\ConsoleSharp\ConsoleSharp.csproj">
       <Project>{1404E970-CE27-4877-9BEA-1E46925E8D42}</Project>
-      <Name>CommandSharp</Name>
+      <Name>ConsoleSharp</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

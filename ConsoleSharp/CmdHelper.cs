@@ -2,7 +2,7 @@ using System;
 using System.Diagnostics;
 using System.IO;
 
-namespace CommandSharp
+namespace ConsoleSharp
 {
     using System.Text;
     using System.Threading.Tasks;

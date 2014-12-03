@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CommandSharp.WPFApp
+namespace ConsoleSharp.WPFApp
 {
     using System.IO;
     using System.Reactive;
@@ -78,8 +78,6 @@ namespace CommandSharp.WPFApp
                                 () => stop.Set());
 
                             await Task.Run(() => stop.WaitOne());
-
-                     
                         }));
         }
     }

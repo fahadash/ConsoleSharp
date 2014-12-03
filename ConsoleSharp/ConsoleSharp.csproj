@@ -7,8 +7,8 @@
     <ProjectGuid>{1404E970-CE27-4877-9BEA-1E46925E8D42}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>CommandSharp</RootNamespace>
-    <AssemblyName>CommandSharp</AssemblyName>
+    <RootNamespace>ConsoleSharp</RootNamespace>
+    <AssemblyName>ConsoleSharp</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

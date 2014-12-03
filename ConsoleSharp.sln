@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.30723.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommandSharp", "CommandSharp\CommandSharp.csproj", "{1404E970-CE27-4877-9BEA-1E46925E8D42}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleSharp", "ConsoleSharp\ConsoleSharp.csproj", "{1404E970-CE27-4877-9BEA-1E46925E8D42}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommandSharp.WPFApp", "Tests\WPFApp\CommandSharp.WPFApp\CommandSharp.WPFApp.csproj", "{618B2476-3EF2-4BAE-BDC4-8C92C137561C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleSharp.WPFApp", "Tests\WPFApp\ConsoleSharp.WPFApp\ConsoleSharp.WPFApp.csproj", "{618B2476-3EF2-4BAE-BDC4-8C92C137561C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
