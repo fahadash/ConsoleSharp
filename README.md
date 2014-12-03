@@ -8,7 +8,7 @@ You can use these helper classes to run console-based command-line utilities and
 
 Here are a few examples
 
-1. Simple command with output capturing
+ Simple command with output capturing
 
 ```csharp
   var outputTask = CmdHelper.RunCommand("c:\\Python27\\Python.exe","-file c:\\path\\to\\myprogram.py");
@@ -20,7 +20,7 @@ Here are a few examples
   Console.WriteLine(output.Errors);
 ```
   
-2. To log to file, similar to ```C:\> Command.exe >> c:\path\to\logfile.log```
+ To log to file, similar to ```C:\> Command.exe >> c:\path\to\logfile.log```
 
 ```csharp
   var outputTask = await CmdHelper.RunCommand("c:\\Python27\\Python.exe","-file c:\\path\\to\\myprogram.py", "c:\\path\\to\\workingdir", "c:\\path\\to\\logfile.log");
