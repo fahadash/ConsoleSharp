@@ -25,3 +25,14 @@ Here are a few examples
 ```csharp
   var outputTask = await CmdHelper.RunCommand("c:\\Python27\\Python.exe","-file c:\\path\\to\\myprogram.py", "c:\\path\\to\\workingdir", "c:\\path\\to\\logfile.log");
 ```
+
+Or if you are really in love with Reactive-Framework like I am
+
+```csharp
+  var console = CmdHelperRx.RunCommand("c:\\Python27\\Python.exe","-file c:\\path\\to\\myprogram.py", "c:\\path\\to\\workingdir");
+  
+   console
+    .Where(data => data.Type.Equals(CommandLineDataType.Error))
+    .Select(d => d.Data)
+    .Subscribe(s => Debug.WriteLine("stderr line received: " + s));
+```
