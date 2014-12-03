@@ -3,7 +3,7 @@ ConsoleSharp
 
 Console Helper for .NET, Written in C#
 
-You can use these helper classes to run console-based command-line utilities and capture their outputs. Currently there are two kinds of helpers, one uses Reactive-Extensions (Rx) to report the output. Other uses async tasks. I am still in the process of improving the functionality. Feel free to make suggestions.
+You can use these helper classes to run console-based command-line utilities and capture their outputs. Currently there are two kinds of helpers, one uses Reactive-Extensions (Rx) to report the output. Other uses async tasks. Feel free to make suggestions.
 
 This is mostly useful when your application needs to invoke an external command-line utility to do some work and analyze its output.
 
