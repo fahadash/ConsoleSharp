@@ -27,7 +27,7 @@ Here are a few examples
   var outputTask = await CmdHelper.RunCommand("c:\\Python27\\Python.exe","-file c:\\path\\to\\myprogram.py", "c:\\path\\to\\workingdir", "c:\\path\\to\\logfile.log");
 ```
 
-Or if you are really in love with Reactive-Framework like I am
+Or if you are really in love with Reactive-Extensions like I am
 
 ```csharp
   var console = CmdHelperRx.RunCommand("c:\\Python27\\Python.exe","-file c:\\path\\to\\myprogram.py", "c:\\path\\to\\workingdir");
