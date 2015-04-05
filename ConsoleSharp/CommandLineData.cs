@@ -9,7 +9,7 @@ namespace ConsoleSharp
 
     public enum CommandLineDataType
     {
-        Output, Error
+        Output, Error, Finished
     }
     public class CommandLineData
     {
@@ -17,11 +17,20 @@ namespace ConsoleSharp
 
         private string data;
 
+        private int exitCode;
+
         public CommandLineData(CommandLineDataType type, string data)
         {
             this.type = type;
             this.data = data;
         }
+
+        public CommandLineData(CommandLineDataType type, int exitCode)
+        {
+            this.type = type;
+            this.exitCode = exitCode;
+        }
+
 
         public CommandLineDataType Type
         {
@@ -36,6 +45,14 @@ namespace ConsoleSharp
             get
             {
                 return this.data;
+            }
+        }
+
+        public int ExitCode
+        {
+            get
+            {
+                return this.exitCode;
             }
         }
     }

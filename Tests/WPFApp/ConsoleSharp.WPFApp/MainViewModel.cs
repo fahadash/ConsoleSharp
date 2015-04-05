@@ -63,6 +63,8 @@ namespace ConsoleSharp.WPFApp
 
         public MainViewModel()
         {
+            this.command = "C:\\python27\\python.exe";
+            this.arguments = "--help";
             RunCommand = ReactiveCommand.CreateAsyncTask(
                     _ =>
                     Task.Run(async () =>

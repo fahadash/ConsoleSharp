@@ -14,8 +14,6 @@ namespace ConsoleSharp
     public class CmdHelperRx
     {
 
-        private static IList<Process> running = new List<Process>();
-
         /// <summary>
         /// Runs a command line or console based executable in the background and allows you to capture the streams of stdout and stderr
         /// </summary>
@@ -41,8 +39,6 @@ namespace ConsoleSharp
             {
                 var process = Process.Start(info);
 
-                running.Add(process);
-                process.Exited += delegate { running.Remove(process); };
                 process.StartInfo = info;
                 process.EnableRaisingEvents = true;
 

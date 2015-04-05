@@ -51,7 +51,8 @@ namespace ConsoleSharp
             return
                 value.StandardOutput.ToObservable()
                     .Select(x => new CommandLineData(CommandLineDataType.Output, x))
-                    .Merge(value.StandardError.ToObservable().Select(x => new CommandLineData(CommandLineDataType.Error, x)));
+                    .Merge(value.StandardError.ToObservable().Select(x => new CommandLineData(CommandLineDataType.Error, x)))
+                    .Concat(Observable.Return(0).Select(_ => new CommandLineData(CommandLineDataType.Finished, value.ExitCode)).Sample(TimeSpan.FromSeconds(1)));
         }
     }
 }
